@@ -1,0 +1,14 @@
+<div class="post">
+    <div class="number">{{number}}</div>
+    <div>
+        <div class="title">
+            <a href="{{post.url}}">{{post.title}}</a>
+        </div>
+        <div class="details">
+            <span id="score">{{post.score}} points </span>
+            <span id="by">by {{post.by}} </span>
+            <span id="time">{{post.time | time}} </span>
+            <span *ngIf="post.kids" id="comments">&#8226; {{post.kids.length}} comments</span>
+        </div>
+    </div>
+</div>

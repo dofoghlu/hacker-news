@@ -1,0 +1,32 @@
+.posts {
+    max-width: 1000px;
+    margin: 16px auto;
+}
+
+.sort{
+    display: flex;
+    border: 1px solid rgb(196, 196, 196);
+    border-radius: 2px;
+    margin-bottom: 8px;
+    background-color: white;
+
+    div {    
+        width: 100px;
+        padding: 12px;
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .active {
+        border-bottom: solid 4px #1976d2;   
+    }
+}
+
+.loader-container {
+    display: flex;
+    justify-content: center;
+    padding: 24px;
+}

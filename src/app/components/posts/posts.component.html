@@ -1,0 +1,15 @@
+<div class="posts">
+    <div class="sort">
+        <div routerLink="/top" routerLinkActive="active">top</div>
+        <div routerLink="/new" routerLinkActive="active">new</div>
+        <div routerLink="/best" routerLinkActive="active">best</div>
+    </div>
+
+    <div *ngFor="let post of posts; index as i">
+        <app-post [post]="post" [number]="i+1"></app-post>
+    </div>
+
+    <div *ngIf="loading" class="loader-container">
+        <app-loader></app-loader>
+    </div>
+</div>
